@@ -1,0 +1,5 @@
+{"timestamp": "2024-01-20T10:00:00Z", "type": "view", "topic": "Introduction to ML", "duration": 300}
+{"timestamp": "2024-01-20T10:05:00Z", "type": "quiz", "topic": "Introduction to ML", "score": 80}
+{"timestamp": "2024-01-21T09:00:00Z", "type": "view", "topic": "Linear Regression Basics", "duration": 600}
+{"timestamp": "2024-01-21T09:10:00Z", "type": "quiz", "topic": "Linear Regression Basics", "score": 40}
+{"timestamp": "2024-01-21T09:20:00Z", "type": "view", "topic": "Linear Regression Math", "duration": 400}

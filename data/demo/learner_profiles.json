@@ -1,0 +1,134 @@
+{
+    "learner_1": {
+        "learner_id": "learner_1",
+        "name": "Ali",
+        "level": "Beginner",
+        "strengths": [
+            "Basic Python",
+            "Introduction to Machine Learning"
+        ],
+        "weaknesses": [
+            "math"
+        ],
+        "pace": "Slow",
+        "engagement": "High",
+        "preferences": {
+            "resource_type": "Video",
+            "tone": "Encouraging"
+        }
+    },
+    "learner_2": {
+        "learner_id": "learner_2",
+        "name": "Zied",
+        "level": "Intermediate",
+        "strengths": [
+            "Statistics",
+            "Introduction to Machine Learning"
+        ],
+        "weaknesses": [
+            "Optimization functions"
+        ],
+        "pace": "Moderate",
+        "engagement": "Irregular",
+        "preferences": {
+            "resource_type": "Text/Article",
+            "tone": "Technical"
+        },
+        "original_goal": "i want to learn about neural networks",
+        "last_topic": "Logistic Regression",
+        "current_quiz": [
+            {
+                "question": "What is the main goal of logistic regression?",
+                "answer": "\\"
+            },
+            {
+                "question": "What type of dependent variable can logistic regression handle?",
+                "answer": "\\"
+            },
+            {
+                "question": "What is the typical range of the output in logistic regression?",
+                "answer": "\\"
+            },
+            {
+                "question": "Why is logistic regression often used for classification problems?",
+                "answer": "\\"
+            },
+            {
+                "question": "What type of analysis does logistic regression perform?",
+                "answer": "\\"
+            }
+        ]
+    },
+    "learner_3": {
+        "learner_id": "learner_3",
+        "name": "Emna",
+        "level": "Advanced",
+        "strengths": [
+            "Neural Networks",
+            "Calculus",
+            "Introduction to Machine Learning",
+            "Logistic Regression",
+            "Neural Networks",
+            "Neural Networks Fundamentals"
+        ],
+        "weaknesses": [
+            "Advanced Hyperparameter Tuning",
+            "Deployment"
+        ],
+        "pace": "Fast",
+        "engagement": "Low",
+        "preferences": {
+            "resource_type": "Case Study",
+            "tone": "Concise"
+        },
+        "original_goal": "i want to learn about deep learning",
+        "last_topic": "Deep Learning Foundations",
+        "current_quiz": [
+            {
+                "question": "What is deep learning based on?",
+                "options": [
+                    "Artificial neural networks",
+                    "Linear regression",
+                    "Decision Trees"
+                ],
+                "answer": "{'option': 'Artificial neural networks'}"
+            },
+            {
+                "question": "What type of learning does deep learning focus on?",
+                "options": [
+                    "Supervised Learning",
+                    "Unsupervised Learning",
+                    "Representation Learning"
+                ],
+                "answer": "{'option': 'Representation Learning'}"
+            },
+            {
+                "question": "What are artificial neural networks inspired by?",
+                "options": [
+                    "The human brain",
+                    "Random Number Generators",
+                    "Linear Algebra"
+                ],
+                "answer": "{'option': 'The human brain'}"
+            },
+            {
+                "question": "What is the primary goal of deep learning models?",
+                "options": [
+                    "To make predictions",
+                    "To recognize patterns",
+                    "To generate new data"
+                ],
+                "answer": "{'option': 'To recognize patterns'}"
+            },
+            {
+                "question": "What type of task does a deep learning model designed for image classification perform?",
+                "options": [
+                    "Text Classification",
+                    "Time Series Forecasting",
+                    "Image Classification"
+                ],
+                "answer": "{'option': 'Image Classification'}"
+            }
+        ]
+    }
+}

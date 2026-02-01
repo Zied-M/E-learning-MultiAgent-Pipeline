@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillwise AI | Instructor Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <header class="app-header">
+        <div class="logo">
+            <div class="logo-blob"></div>
+            <h1>SKILLWISE AI</h1>
+        </div>
+        <div class="header-actions">
+            <button id="btn-edit-profile" class="btn btn-ghost">Edit Profile</button>
+        </div>
+    </header>
+
+    <div class="app-container">
+        <!-- Chat Area -->
+        <section class="chat-section">
+            <div id="chat-messages" class="chat-messages">
+                <div class="message instructor">
+                    <p>Hello! I am your AI Knowledge Assistant. Please select a learner profile and tell me what topic
+                        you'd like to explore today.</p>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <div class="input-box">
+                    <input type="text" id="goal-topic" placeholder="e.g., Logistic Regression or Neural Networks...">
+                    <button id="btn-run-pipeline" class="btn btn-primary">Run Agents</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sidebar / Dashboard -->
+        <section class="dashboard-section">
+            <div class="side-panel">
+                <!-- Profiles Card -->
+                <div class="panel-card">
+                    <h3>Active Learner</h3>
+                    <div id="profile-grid" class="profile-grid">
+                        <!-- Profiles rendered here -->
+                    </div>
+                </div>
+
+                <!-- Trace Card -->
+                <div class="panel-card">
+                    <div class="flex-row">
+                        <h3>Execution Trace</h3>
+                        <span id="refresh-trace" style="cursor:pointer; font-size:0.8rem">REFRESH</span>
+                    </div>
+                    <div id="trace-viewer" class="trace-content">
+                        Tracing inactive...
+                    </div>
+                </div>
+
+                <!-- XAI Summary Card -->
+                <div id="xai-card" class="panel-card hidden">
+                    <h3>Reasoning & Insights</h3>
+                    <div id="xai-body">
+                        <!-- XAI content -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Edit Profile Modal -->
+    <div id="profile-modal" class="modal">
+        <div class="modal-content">
+            <h2 style="margin-bottom: 1.5rem; font-family: 'Outfit'">Update Persona</h2>
+            <form id="profile-form">
+                <input type="hidden" id="edit-id">
+                <div style="margin-bottom: 1rem">
+                    <label style="display:block; margin-bottom:0.5rem; font-size:0.9rem">Full Name</label>
+                    <input type="text" id="edit-name"
+                        style="width:100%; padding:0.8rem; background:#0f172a; border:1px solid #334155; border-radius:8px; color:white">
+                </div>
+                <div style="margin-bottom: 1rem">
+                    <label style="display:block; margin-bottom:0.5rem; font-size:0.9rem">Experience Level</label>
+                    <select id="edit-level"
+                        style="width:100%; padding:0.8rem; background:#0f172a; border:1px solid #334155; border-radius:8px; color:white">
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 1rem">
+                    <label style="display:block; margin-bottom:0.5rem; font-size:0.9rem">Current Strengths</label>
+                    <input type="text" id="edit-strengths"
+                        style="width:100%; padding:0.8rem; background:#0f172a; border:1px solid #334155; border-radius:8px; color:white">
+                </div>
+                <div style="margin-bottom: 2rem">
+                    <label style="display:block; margin-bottom:0.5rem; font-size:0.9rem">Current Weaknesses</label>
+                    <input type="text" id="edit-weaknesses"
+                        style="width:100%; padding:0.8rem; background:#0f172a; border:1px solid #334155; border-radius:8px; color:white">
+                </div>
+                <div style="display:flex; gap:1rem; justify-content: flex-end">
+                    <button type="button" id="close-modal" class="btn btn-ghost">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Profile</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+topics:
+  - id: "ML_INTRO"
+    name: "Introduction to Machine Learning"
+    difficulty: 1
+    prerequisites: []
+  - id: "LIN_REG_BASICS"
+    name: "Linear Regression Basics"
+    difficulty: 2
+    prerequisites: ["ML_INTRO"]
+  - id: "LIN_REG_MATH"
+    name: "The Math of Linear Regression"
+    difficulty: 3
+    prerequisites: ["LIN_REG_BASICS"]
+  - id: "LOG_REG"
+    name: "Logistic Regression"
+    difficulty: 3
+    prerequisites: ["ML_INTRO"]
+  - id: "NEURAL_NETS"
+    name: "Neural Networks Fundamentals"
+    difficulty: 4
+    prerequisites: ["LOG_REG"]
+  - id: "HYPERPARAM"
+    name: "Hyperparameter Tuning"
+    difficulty: 5
+    prerequisites: ["NEURAL_NETS"]
+  - id: "DEEP_LEARNING"
+    name: "Deep Learning Foundations"
+    difficulty: 4
+    prerequisites: ["NEURAL_NETS"]
+  - id: "ENSEMBLE_LEARNING"
+    name: "Ensemble Learning and Deep Learning"
+    difficulty: 5
+    prerequisites: ["DEEP_LEARNING"]

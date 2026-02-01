@@ -1,0 +1,116 @@
+--- Pipeline Execution Trace: 2026-02-01T22:43:08.800247 ---
+2026-02-01 22:44:23,838 - PipelineTrace - INFO - [ProfilingAgent] OULAD Calibration Success: {
+  "mean_score": 75.7995729226023,
+  "p25": 65.0,
+  "p50": 80.0,
+  "p75": 90.0
+}
+2026-02-01 22:44:23,865 - PipelineTrace - INFO - [Orchestrator] Processing Input: {
+  "learner_id": "learner_1",
+  "input": "i want to learn about neural networks"
+}
+2026-02-01 22:44:23,866 - PipelineTrace - INFO - [LearnerAgent] Fetching Context: {
+  "learner_id": "learner_1"
+}
+2026-02-01 22:44:23,889 - PipelineTrace - INFO - [ProfilingAgent] Generating Profile: {
+  "learner_name": "Ali"
+}
+2026-02-01 22:44:23,890 - PipelineTrace - INFO - [Orchestrator] Intent Result: GOAL
+2026-02-01 22:44:23,890 - PipelineTrace - INFO - [Orchestrator] Execution Flow: {
+  "mode": "Planning",
+  "input": "i want to learn about neural networks"
+}
+2026-02-01 22:44:23,891 - PipelineTrace - INFO - [PathPlanningAgent] Planning Path: {
+  "goal": "i want to learn about neural networks"
+}
+2026-02-01 22:44:23,892 - PipelineTrace - INFO - [PathPlanningAgent] NLU Fallback: Mapping conversational input via LLM
+2026-02-01 22:44:36,422 - PipelineTrace - INFO - [PathPlanningAgent] LLM Mapping Result: Neural Networks Fundamentals
+2026-02-01 22:44:36,425 - PipelineTrace - INFO - [RAG] Retrieving: {
+  "topic_id": "ML_INTRO",
+  "topic_name": "Introduction to Machine Learning",
+  "k": 2
+}
+2026-02-01 22:44:36,426 - PipelineTrace - INFO - [RAG] Results Found: {
+  "count": 1,
+  "resource_ids": [
+    "res_1"
+  ]
+}
+2026-02-01 22:44:36,426 - PipelineTrace - INFO - [RecommendationAgent] Ranking Candidates: {
+  "next_step": "Introduction to Machine Learning"
+}
+2026-02-01 22:44:36,427 - PipelineTrace - INFO - [ContentGeneratorAgent] Generating Content: {
+  "topic": "Introduction to Machine Learning"
+}
+2026-02-01 22:45:05,009 - PipelineTrace - INFO - [ContentGeneratorAgent] Extraction Success: Grounded Quiz Data Saved
+2026-02-01 22:45:05,010 - PipelineTrace - INFO - [VerifierAgent] Verifying Content: Running hard-rule checks
+2026-02-01 22:45:05,010 - PipelineTrace - INFO - [VerifierAgent] Verification Report: {
+  "passed": true,
+  "reasons": []
+}
+2026-02-01 22:45:05,010 - PipelineTrace - INFO - [JudgeAgent] Final Decision: ACCEPT
+2026-02-01 22:45:05,010 - PipelineTrace - INFO - [XAIAgent] Packaging XAI Output: Finalizing report
+2026-02-01 22:49:42,809 - PipelineTrace - INFO - [ProfilingAgent] OULAD Calibration Success: {
+  "mean_score": 75.7995729226023,
+  "p25": 65.0,
+  "p50": 80.0,
+  "p75": 90.0
+}
+2026-02-01 22:49:42,817 - PipelineTrace - INFO - [Orchestrator] Processing Input: {
+  "learner_id": "learner_1",
+  "input": "a,b,a,c,d"
+}
+2026-02-01 22:49:42,818 - PipelineTrace - INFO - [LearnerAgent] Fetching Context: {
+  "learner_id": "learner_1"
+}
+2026-02-01 22:49:42,819 - PipelineTrace - INFO - [ProfilingAgent] Generating Profile: {
+  "learner_name": "Ali"
+}
+2026-02-01 22:49:45,857 - PipelineTrace - INFO - [Orchestrator] Intent Result: ANSWER
+2026-02-01 22:49:45,858 - PipelineTrace - INFO - [Orchestrator] Reviewing Answer: a,b,a,c,d
+2026-02-01 22:50:06,595 - PipelineTrace - INFO - [LearnerAgent] Updating Progress: {
+  "learner_id": "learner_1",
+  "topic": "Introduction to Machine Learning"
+}
+2026-02-01 22:50:06,596 - PipelineTrace - INFO - [Orchestrator] Evaluation Result: PROGRESSING WITH FEEDBACK
+2026-02-01 22:50:06,597 - PipelineTrace - INFO - [LearnerAgent] Fetching Context: {
+  "learner_id": "learner_1"
+}
+2026-02-01 22:50:06,597 - PipelineTrace - INFO - [ProfilingAgent] Generating Profile: {
+  "learner_name": "Ali"
+}
+2026-02-01 22:50:06,598 - PipelineTrace - INFO - [Orchestrator] Execution Flow: {
+  "mode": "Chaining",
+  "input": "i want to learn about neural networks"
+}
+2026-02-01 22:50:06,598 - PipelineTrace - INFO - [PathPlanningAgent] Planning Path: {
+  "goal": "i want to learn about neural networks"
+}
+2026-02-01 22:50:06,598 - PipelineTrace - INFO - [PathPlanningAgent] NLU Fallback: Mapping conversational input via LLM
+2026-02-01 22:50:09,643 - PipelineTrace - INFO - [PathPlanningAgent] LLM Mapping Result: Neural Networks Fundamentals
+2026-02-01 22:50:09,644 - PipelineTrace - INFO - [RAG] Retrieving: {
+  "topic_id": "LOG_REG",
+  "topic_name": "Logistic Regression",
+  "k": 2
+}
+2026-02-01 22:50:09,646 - PipelineTrace - INFO - [RAG] Results Found: {
+  "count": 1,
+  "resource_ids": [
+    "res_4"
+  ]
+}
+2026-02-01 22:50:09,646 - PipelineTrace - INFO - [RecommendationAgent] Ranking Candidates: {
+  "next_step": "Logistic Regression"
+}
+2026-02-01 22:50:09,647 - PipelineTrace - INFO - [ContentGeneratorAgent] Generating Content: {
+  "topic": "Logistic Regression"
+}
+2026-02-01 22:50:39,514 - PipelineTrace - INFO - [ContentGeneratorAgent] Extraction Warning: Falling back to smart scraping
+2026-02-01 22:50:39,515 - PipelineTrace - INFO - [VerifierAgent] Verifying Content: Running hard-rule checks
+2026-02-01 22:50:39,515 - PipelineTrace - INFO - [VerifierAgent] Verification Report: {
+  "passed": true,
+  "reasons": []
+}
+2026-02-01 22:50:39,516 - PipelineTrace - INFO - [JudgeAgent] Final Decision: ACCEPT
+2026-02-01 22:50:39,516 - PipelineTrace - INFO - [Orchestrator] Quiz Recovery: Successfully recovered quiz metadata and injected into response
+2026-02-01 22:50:39,518 - PipelineTrace - INFO - [XAIAgent] Packaging XAI Output: Finalizing report

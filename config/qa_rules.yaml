@@ -1,0 +1,9 @@
+qa_rules:
+  min_citations: 2
+  grounding_overlap_threshold: 0.3
+  max_revision_attempts: 1
+  fallback_triggers:
+    - "hallucination_detected"
+    - "no_citations"
+    - "incorrect_topic"
+  retry_policy: "exponential_backoff"
