@@ -87,19 +87,18 @@ This README focuses on usage and system overview, while the deep dive explains h
 ---
 
 ## 🖥️ Demo & Screenshots
-🔹 Web Dashboard
 
-Shows learner interaction, generated content, and system responses.
+🔹 Web Dashboard
+Initial interface.
+![Web Interface](./screenshots/web_interface.png)
+
+Shows learner interaction, generated content, system responses and a snippet of agents interaction and trace.
+![Conversation & Trace](./screenshots/Conversation_&_trace.png)
 
 🔹 Explainability Trace
+Shows the reasoning summary and insights of the agentic pipeline.
+![Reasoning and Insights](./screenshots/Reasoning_and_insights.png)
 
-Displays step-by-step execution of all agents.
-
-🔹 Generated Learning Content
-
-Example of structured lesson + quiz generation.
-
-📌 You can add your screenshots in a /screenshots folder and replace these images.
 
 ## ⚙️ Tech Stack
 Python

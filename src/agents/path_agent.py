@@ -52,7 +52,7 @@ class PathPlanningAgent:
 
         if not goal_node:
             self.logger.log_step("PathPlanningAgent", "Error", f"No topic match found for: {goal_topic}")
-            return []
+            return None # Return None to indicate no topic match found
 
         path = []
         # Breadth-first search for prerequisites (simplified for demo)

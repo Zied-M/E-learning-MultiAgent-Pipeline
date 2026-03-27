@@ -125,6 +125,17 @@ class Orchestrator:
         path = self.path_agent.plan_path(profile, input_text)
         self.shared_state['path'] = path
         
+        if path is None:
+            return {
+                "status": "Success",
+                "learner": profile['name'],
+                "next_step": "Topic Not Found",
+                "content": {"explanation": f"I couldn't find a specific topic in my curriculum that matches **{input_text}**. Try asking about something else, or check the topic graph!"},
+                "feedback": feedback_prefix,
+                "xai": self.xai_agent.package_report(self.shared_state),
+                "trace_file": "trace.log"
+            }
+
         if not path:
             return {
                 "status": "Success",

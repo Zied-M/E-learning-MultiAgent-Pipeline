@@ -4,8 +4,7 @@
         "name": "Ali",
         "level": "Beginner",
         "strengths": [
-            "Basic Python",
-            "Introduction to Machine Learning"
+            "Basic Python"
         ],
         "weaknesses": [
             "math"
@@ -15,7 +14,56 @@
         "preferences": {
             "resource_type": "Video",
             "tone": "Encouraging"
-        }
+        },
+        "original_goal": "i want to learn about neural networks",
+        "last_topic": "Introduction to Machine Learning",
+        "current_quiz": [
+            {
+                "question": "What is machine learning?",
+                "options": [
+                    "Option A",
+                    "Option B",
+                    "Option C"
+                ],
+                "answer": "A subset of artificial intelligence"
+            },
+            {
+                "question": "How do machine learning algorithms improve?",
+                "options": [
+                    "Option A",
+                    "Option B",
+                    "Option C"
+                ],
+                "answer": "Through experience and data analysis"
+            },
+            {
+                "question": "What is an example of machine learning in action?",
+                "options": [
+                    "Option A",
+                    "Option B",
+                    "Option C"
+                ],
+                "answer": "A self-driving car recognizing pedestrians"
+            },
+            {
+                "question": "What does 'learn from data' mean in the context of machine learning?",
+                "options": [
+                    "Option A",
+                    "Option B",
+                    "Option C"
+                ],
+                "answer": "The algorithm analyzes a given dataset and makes predictions"
+            },
+            {
+                "question": "What is the primary goal of machine learning?",
+                "options": [
+                    "Option A",
+                    "Option B",
+                    "Option C"
+                ],
+                "answer": "To improve the accuracy of algorithms through data analysis"
+            }
+        ]
     },
     "learner_2": {
         "learner_id": "learner_2",
